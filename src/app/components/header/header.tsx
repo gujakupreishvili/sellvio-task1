@@ -8,7 +8,7 @@ import notification from "../../../../public/assets/notification-alarm-bell_svgr
 
 export default function Header() {
   return (
-    <div className='flex justify-between pl-[32px] pr-[23px] pt-[17px]'>
+    <div className='flex justify-between pl-[32px] pr-[23px] pt-[17px] items-start'>
       <Image  src={logo} alt='logo'/>
       <div className='flex items-center gap-[16px]'>
        <Button Img={searchIcon} className='w-[50px] h-[50px] rounded-[8px] border-[1px] border-[#0000001A] flex items-center justify-center'  />
