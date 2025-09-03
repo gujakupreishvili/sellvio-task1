@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Noto_Sans_Georgian, Geist_Mono } from "next/font/google";
+import LocalFont from "next/font/local";
+// import font from "../../public/font"
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const SansGeorgian = Noto_Sans_Georgian({
+  variable: "--font-Noto-Sans-Georgian",
   subsets: ["latin"],
 });
 
@@ -11,6 +13,22 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+// const helvetic = LocalFont({
+//   src: [
+//     {
+//       path: '/font/HelveticaNeueMedium.otf',
+//       weight: "400",
+//       style: "normal",
+//     },
+//     {
+//       path: "/font/HelveticaNeueBold.otf",
+//       weight: "700",
+//       style: "normal",
+//     },
+//   ],
+//   variable: "--font-helvetic",
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${SansGeorgian.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>

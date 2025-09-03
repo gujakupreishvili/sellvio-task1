@@ -8,7 +8,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans-georgian: var(--font-Noto-Sans-Georgian);
+  /* --font-helvetic: var(--font-helvetic); */
   --font-mono: var(--font-geist-mono);
 }
 
