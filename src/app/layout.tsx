@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Noto_Sans_Georgian, Geist_Mono } from "next/font/google";
-import LocalFont from "next/font/local";
+// import LocalFont from "next/font/local";
 // import font from "../../public/font"
 import "./globals.css";
 
