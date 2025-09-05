@@ -1,20 +1,38 @@
 import React from 'react'
 import Image, { StaticImageData } from "next/image";
+
 type Props = {
- text?: string
- icon?: React.ElementType | undefined
- Img?:StaticImageData
- className: string; 
- pTagStyle?:string
- iconStyle?:string
+  text?: string
+  icon?: React.ElementType | undefined
+  Img?: StaticImageData
+  className?: string 
+  pTagStyle?: string
+  iconStyle?: string
+  isSelected?: boolean 
+  onClick?: () => void     
 }
 
-export default function Button({ text, icon: Icon, Img , className ,pTagStyle,iconStyle }: Props) {
+export default function Button({ 
+  text, 
+  icon: Icon, 
+  Img, 
+  className = "", 
+  pTagStyle, 
+  iconStyle, 
+  isSelected = false, 
+  onClick 
+}: Props) {
   return (
-   <button className={`${className}`}>
-    {Icon && <Icon className={`${iconStyle}`} />}
-    {Img && <Image src={Img} alt="button icon" width={20} height={20} />}
-    {text && <p className={`${pTagStyle}`}>{text}</p>}
-   </button>
+    <button
+      onClick={onClick}
+      className={`
+        ${className}
+        ${isSelected ? "bg-[#E3E8EF]" : ""}
+      `}
+    >
+      {Icon && <Icon className={iconStyle} />}
+      {Img && <Image src={Img} alt="button icon" />}
+      {text && <p className={pTagStyle}>{text}</p>}
+    </button>
   )
 }
