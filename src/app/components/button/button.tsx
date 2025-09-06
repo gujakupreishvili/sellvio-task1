@@ -26,6 +26,7 @@ export default function Button({
     <button
       onClick={onClick}
       className={`
+        cursor-pointer
         ${className}
         ${isSelected ? "bg-[#E3E8EF]" : ""}
       `}
