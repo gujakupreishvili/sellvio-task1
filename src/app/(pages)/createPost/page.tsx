@@ -14,7 +14,6 @@ import ImageIcon from "../../../../public/assets/createPostIcon/imageIcon.svg";
 import upload2 from "../../../../public/assets/createPostIcon/upload2.svg";
 import bullhorn from "../../../../public/assets/createPostIcon/bullhorn-svgrepo-com 1.svg"
 import CustomDatePicker from "@/app/components/customDatePick/customDatePick";
-import Switcher from "@/app/components/switcher/switcher";
 import ConnectChat from "@/app/components/connectChat/connectChat";
 import Tags from "@/app/components/tags/tags";
 import Button from "@/app/components/button/button";
@@ -23,7 +22,7 @@ import Link from "next/link";
 export default function CreatPost() {
   console.log(InputVariants.CURRENCY, "eum variant");
   return (
-    <div className="flex flex-col justify-center items-center  bg-[#F7F7F7] min-h-screen gap-[64px] py-[100px]">
+    <div className="flex flex-col justify-center items-center  bg-[#F7F7F7] min-h-screen gap-[64px] py-[100px] max-w-[1980px] mx-auto">
       <CampaingFundamentalSection
         iconSrc={control}
         title={"კამპანიის საფუძვლები"}
