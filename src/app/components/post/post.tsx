@@ -14,7 +14,7 @@ export default function Post({postType, current, total}:Props) {
 
   const percentage = Math.min(100, (current / total) * 100);
   return (
-    <div className="w-[32.1%] border-[1px] border-[#00000036] rounded-[8px] max-w-[446px] min-w-[300px]  ">
+    <div className="w-[31.9%] border-[1px] border-[#00000036] rounded-[8px] max-w-[446px] min-w-[300px]  ">
       <div className="bg-[linear-gradient(180deg,#636363_0%,#999999_100%)] h-[244px] w-full rounded-tl-[8px] rounded-tr-[8px] relative">
         <p className="absolute bottom-[22px] left-[15px] text-white font-bold font-sans-georgian text-[18px]">
           ვიდეოს სახელწოდება

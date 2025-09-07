@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Content() {
   return (
-    <div className="flex flex-col pl-[27px] pr-[26px] pt-[65px] ">
+    <div className="flex flex-col pl-[27px] pr-[26px] pt-[65px] max-w-[1980px] mx-auto ">
       <div className="w-full h-[54px] bg-[#F2F5F9] rounded-[8px] flex items-center px-[5px] py-[7px] mb-[28px]">
         <p className="w-[50%] text-center  py-[8px] rounded-[4px] text-black/67 text-[16px] font-bold font-sans-georgian ">
           ანალიტიკა
